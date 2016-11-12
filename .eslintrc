@@ -1,0 +1,25 @@
+---
+  parser: "babel-eslint"
+  parserOptions:
+    ecmaFeatures:
+      jsx: true
+  plugins:
+    - "babel"
+    - "react"
+  extends:
+    - "plugin:react/recommended"
+    - "airbnb/base"
+  rules:
+    comma-dangle: 0
+    no-loop-func: 0
+  settings:
+    import/resolver:
+      babel-module-alias: {}
+  env:
+    mocha: true
+  globals:
+    stub: true
+    spy: true
+    expect: true
+    Generator: true
+    Iterable: true
